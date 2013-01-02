@@ -19,7 +19,7 @@ if %seconds% == 0 goto abort
 if not %seconds% == 0 goto shutdown
 
 :shutdown
-  set /a hours = %hours% + 0
+	set /a hours = %hours% + 0
 	set /a hours = %hours% + 0
 
 	shutdown.exe -s -f -t %seconds%
